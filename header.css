@@ -71,6 +71,13 @@ nav .content .links {
   list-style: none;
   line-height: 30px;
 }
+
+.content .links li.account {
+  display: none;
+}
+.account-separator {
+  display: none;
+}
 .content .links li a,
 .content .links li label {
   color: var(--linksColor);
@@ -268,6 +275,14 @@ nav .content .links {
   .content .links li {
     margin: 15px 5px;
   }
+  .content .links li.account {
+    display: block;
+  }
+  .account-separator {
+    display: block;
+    height: 1px;
+    background: #666666;
+  }
   .content .links li a,
   .content .links li label {
     line-height: 40px;
@@ -275,6 +290,10 @@ nav .content .links {
     display: block;
     padding: 8px 18px;
     cursor: pointer;
+  }
+
+  .content .links li label label {
+    padding: 0;
   }
   .content .links li a.desktop-link {
     display: none;
@@ -304,7 +323,8 @@ nav .content .links {
   .content .links #show-packaging:checked ~ ul,
   .content .links #show-food-packaging:checked ~ ul,
   .content .links #show-promotional-items:checked ~ ul,
-  .content .links #show-large-prints:checked ~ ul {
+  .content .links #show-large-prints:checked ~ ul,
+  .content .links #show-account:checked ~ ul {
     max-height: 100vh;
     box-shadow: none;
   }
