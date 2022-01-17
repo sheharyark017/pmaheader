@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+@media screen and (min-width: 980) {
+  .bottom-nav {
+    display: none;
+  }
+}
+
+.bottom-nav {
+  background: #67afa4;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.bottom-nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.bottom-nav a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.buttons {
+  display: flex;
+}
+
+.button-section {
+  width: 50%;
+  text-align: center;
+}
+
+.button-section a {
+  display: inline-block;
+  width: 100%;
+  box-shadow: 0 0 1px 0 #204741fd;
+  font-size: 18px;
+  padding: 13px;
+}

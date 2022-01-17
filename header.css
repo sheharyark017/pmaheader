@@ -6,17 +6,28 @@
   text-decoration: none;
   font-family: "Poppins", sans-serif;
 }
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+}
+
 :root {
   --linksColor: #555555;
 }
 .wrapper {
-  background: #fff;
-  position: fixed;
+  background: rgb(129, 127, 127);
   width: 100%;
 }
 .wrapper nav {
   position: relative;
-
   max-width: calc(100% - 200px);
   margin: 0 auto;
   height: 70px;
@@ -49,7 +60,7 @@ nav .top-nav {
 
 .top-nav .content .links li:hover > ul {
   top: 42px;
-  z-index: 88;
+  z-index: 8888;
 }
 
 .wrapper nav .nav-flex {
@@ -69,7 +80,7 @@ nav .content .links {
 }
 .content .links li {
   list-style: none;
-  line-height: 30px;
+  line-height: 70px;
 }
 
 .content .links li.account {
@@ -286,7 +297,7 @@ nav .content .links {
   }
   .content .links li a,
   .content .links li label {
-    line-height: 40px;
+    line-height: 70px;
     font-size: 16px;
     display: block;
     padding: 0px 18px;
